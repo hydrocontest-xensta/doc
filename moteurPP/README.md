@@ -1,6 +1,6 @@
 # MoteurPP
 
-Le moteur actuel du plan porteur est le modèle `1660S048BHT` de Faulhaber avec un réducteur `17/1` (rapport de réduction 4.5) en sortie et un codeur incrémental `IEM3-1024`.
+Le moteur actuel du plan porteur est le modèle `1660S048BHT` de Faulhaber avec un réducteur `17/1` (rapport de réduction 4.5) en sortie et un codeur incrémental `IEM3-1024`. Il est commandé par une carte de contrôle `MC5004P` (Faulhaber).
 
 Vous trouverez ici les documents technique collectés.
 
@@ -14,6 +14,20 @@ Cette platine peut recevoir des ordres par l'interface USB (utilisée principale
 - protocole de communication : *communication manual*
 - les messages à envoyer : *drive functions*
 - le descriptif des connexions : *technical manual*
+
+
+## Configuration avec MotionManager
+
+| paramètre    | valeur                                                     | commentaire                                                                                                 |
+| ------------ | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+|              | **dans le mode `ajout d'un moteur`**                       |                                                                                                             |
+| ref. moteur  | 1660S048BHT                                                | le 'S' designe le type d'arbre de sortie - ca n'est pas important ici si le logiciel propose 'U' à la place |
+| capteur Hall | digitaux                                                   |                                                                                                             |
+| encodeur     | incrémental, 1024 pulse/revolutions, pulse d'index positif |                                                                                                             |
+| commutation  | sinusoidale (hall + codeur)                                | (block est possible aussi, mais c'est moins délicat pour le moteur                                          |
+|              | **après l'ajout - `controller tuning`**                    |                                                                                                             |
+| vitesse max  | 8000 tr/min                                                | vitesse maximum admissible pour le réducteur                                                                |
+| network mode | off                                                        | désactive l'envoi asynchrone de messages                                                                    |
 
 ## Notes
 

@@ -5,7 +5,12 @@ Référence de nos modèles:
 
 ## Outils de développement
 
-### IDE
+### IDE / Toolchain
+
+Deux possibilités marchant décemment bien à l'heure actuelle:
+
+- l'IDE SW4STM32 (System Workbench for STM32), mal maintenu, mais qui est abordable d'utilisation. L'IDE est basé sur Eclipse
+- une toolchain installée à la main (Linux seulement) utilisant arm-gcc pour cross-compiler, et gdb-multiarch pour le debug
 
 ### CubeMX
 
