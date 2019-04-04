@@ -15,7 +15,6 @@ Cette platine peut recevoir des ordres par l'interface USB (utilisée principale
 - les messages à envoyer : *drive functions*
 - le descriptif des connexions : *technical manual*
 
-
 ## Configuration avec MotionManager
 
 | paramètre    | valeur                                                     | commentaire                                                                                                 |
@@ -25,7 +24,7 @@ Cette platine peut recevoir des ordres par l'interface USB (utilisée principale
 | capteur Hall | digitaux                                                   |                                                                                                             |
 | encodeur     | incrémental, 1024 pulse/revolutions, pulse d'index positif |                                                                                                             |
 | commutation  | sinusoidale (hall + codeur)                                | (block est possible aussi, mais c'est moins délicat pour le moteur                                          |
-|              | **drive functinos - `controller tuning`**                  |                                                                                                             |
+|              | **drive functions - `controller tuning`**                  |                                                                                                             |
 | vitesse max  | 8000 tr/min                                                | vitesse maximum admissible pour le réducteur                                                                |
 | network mode | off                                                        | désactive l'envoi asynchrone de messages                                                                    |
 
@@ -106,3 +105,9 @@ Cette platine peut recevoir des ordres par l'interface USB (utilisée principale
 ### divers
 
 vitesse un tour/s : 307.2 incr/min
+
+## Problèmes rencontrés
+
+### La grande $@#$#$ de mars
+
+la règle d'or : **NE PAS FAIRE PASSER DES PHASES dans le même câble que les signaux**
