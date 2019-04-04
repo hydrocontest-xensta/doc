@@ -41,6 +41,27 @@ Cette platine peut recevoir des ordres par l'interface USB (utilisée principale
 17:50:58.238    OK
 ```
 
+### commande serie pour vitesse actuelle
+
+```tsv
+12:55:00.150	1 GOBJ 606C.00	Transmit: 53 07 01 01 6C 60 00 5E 45	Velocity actual value
+12:55:00.166	1 GOBJ 606C.00 = 0 (0x00000000)	Receive: 53 0B 01 01 6C 60 00 00 00 00 00 AD 45	
+```
+
+#### commande serie pour position actuell
+
+```tsv
+12:58:17.067	1 GOBJ 6064.00 = 248 (0x000000F8)	Receive: 53 0B 01 01 64 60 00 F8 00 00 00 08 45	
+12:58:17.833	1 GOBJ 6064.00	Transmit: 53 07 01 01 64 60 00 56 45	Position actual value
+12:58:17.864	1 GOBJ 6064.00 = 22 (0x00000016)	Receive: 53 0B 01 01 64 60 00 16 00 00 00 E6 45	
+12:58:18.583	1 GOBJ 6064.00	Transmit: 53 07 01 01 64 60 00 56 45	Position actual value
+12:58:18.598	1 GOBJ 6064.00 = 33 (0x00000021)	Receive: 53 0B 01 01 64 60 00 21 00 00 00 2E 45	
+12:58:19.333	1 GOBJ 6064.00	Transmit: 53 07 01 01 64 60 00 56 45	Position actual value
+12:58:19.348	1 GOBJ 6064.00 = 9 (0x00000009)	Receive: 53 0B 01 01 64 60 00 09 00 00 00 53 45	
+12:58:20.082	1 GOBJ 6064.00	Transmit: 53 07 01 01 64 60 00 56 45	Position actual value
+12:58:20.098	1 GOBJ 6064.00 = -32 (0xFFFFFFE0)	Receive: 53 0B 01 01 64 60 00 E0 FF FF FF BA 45	
+```
+
 ### divers
 
 vitesse un tour/s : 307.2 incr/min
